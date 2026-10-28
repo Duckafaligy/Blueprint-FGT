@@ -1,1 +1,3 @@
-export default function Page() { return <div className="page"><h1>business</h1></div>; }
+import { redirect } from "next/navigation";
+
+export default function Page() { redirect("/business/inquiry/1"); }

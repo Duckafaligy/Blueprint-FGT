@@ -1,6 +1,6 @@
 # Shared rules for the FGT Flow demo (read before coding)
 
-Demo day is Thursday, Nov 6. All state lives in `useApp()` (`src/lib/store.tsx`). Change it only with `update((d) => { ... })`, which gives you a draft copy. Show feedback with `toast("...")`. Reset demo restores `src/lib/seed.ts`.
+Demo day is Friday, Nov 6. All state lives in `useApp()` (`src/lib/store.tsx`). Change it only with `update((d) => { ... })`, which gives you a draft copy. Show feedback with `toast("...")`. Reset demo restores `src/lib/seed.ts`.
 
 ## Device status flow (a status only moves along this flow)
 Booked -> Received (intake) -> Wiped (wipe log) -> At partner (shipment shipped) -> Refurbishing -> Done (partner finished) -> Ready for QC (batch returned to FGT) -> Ready to sell (QC pass) -> Sold.

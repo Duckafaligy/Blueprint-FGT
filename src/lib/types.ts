@@ -37,7 +37,7 @@ export interface Lot {
   email: string;
   phone: string;
   address: string;
-  window: string;          // for example "Thu, Nov 6 · 1 to 4"
+  window: string;          // for example "Fri, Nov 6 · 1 to 4"
   count: number;           // devices booked
   status: "Booked" | "Picked up" | "In progress" | "Closed";
   fee: number;

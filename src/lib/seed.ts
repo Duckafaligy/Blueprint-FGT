@@ -1,7 +1,7 @@
 import type { AppState, Device, DeviceStatus, Lot, Partner, Shipment, Person, Settings, Grade, HistoryEntry } from "./types";
 
-/** The demo runs on Thursday, Nov 6, 2026. */
-export const DEMO_DAY = "Thu, Nov 6";
+/** The demo runs on Friday, Nov 6, 2026. */
+export const DEMO_DAY = "Fri, Nov 6";
 
 const MODELS: { make: string; model: string; price: number }[] = [
   { make: "Dell", model: "Latitude 5420", price: 309.99 },
@@ -61,19 +61,19 @@ export function makeSeed(): AppState {
   ];
 
   const lots: Lot[] = [
-    { id: "HDG-0031", company: "Harbour Dental Group", contact: "Priti Shah", email: "priti@harbourdental.example", phone: "416-555-0111", address: "88 Adelaide St W", window: "Thu, Nov 6 · 1 to 4", count: 14, status: "Picked up", fee: 125, kind: "donate" },
-    { id: "QWL-0007", company: "Queen West Law", contact: "Tom Berg", email: "tom@queenwestlaw.example", phone: "416-555-0122", address: "910 Queen St W", window: "Thu, Nov 13 · 9 to 12", count: 11, status: "Booked", fee: 125, kind: "donate" },
-    { id: "BDS-0012", company: "Bloor Design Studio", contact: "Ana Ruiz", email: "ana@bloordesign.example", phone: "416-555-0133", address: "700 Bloor St W", window: "Tue, Nov 18 · 1 to 4", count: 10, status: "Booked", fee: 125, kind: "donate" },
-    { id: "TRB-0003", company: "Trillium Brokerage", contact: "Mei Chen", email: "mei@trilliumbrokerage.example", phone: "416-555-0144", address: "20 Bay St", window: "Fri, Nov 21 · 9 to 12", count: 22, status: "Booked", fee: 125, kind: "donate" },
-    { id: "MSA-0024", company: "Maple Street Accounting", contact: "Dana Okafor", email: "dana@maplestreetaccounting.example", phone: "416-555-0142", address: "142 King Street East, Suite 300", window: "Fri, Oct 24 · 9 to 12", count: 12, status: "In progress", fee: 125, kind: "donate", intakeDone: true },
-    { id: "MSA-0011", company: "Maple Street Accounting", contact: "Dana Okafor", email: "dana@maplestreetaccounting.example", phone: "416-555-0142", address: "142 King Street East, Suite 300", window: "Fri, Aug 22 · 9 to 12", count: 18, status: "Closed", fee: 125, kind: "donate", intakeDone: true },
-    { id: "QWL-0004", company: "Queen West Law", contact: "Tom Berg", email: "tom@queenwestlaw.example", phone: "416-555-0122", address: "910 Queen St W", window: "Tue, Oct 14 · 9 to 12", count: 10, status: "In progress", fee: 125, kind: "donate", intakeDone: true },
-    { id: "BDS-0004", company: "Bloor Design Studio", contact: "Ana Ruiz", email: "ana@bloordesign.example", phone: "416-555-0133", address: "700 Bloor St W", window: "Fri, Oct 10 · 1 to 4", count: 4, status: "In progress", fee: 125, kind: "donate", intakeDone: true },
-    { id: "TRB-0001", company: "Trillium Brokerage", contact: "Mei Chen", email: "mei@trilliumbrokerage.example", phone: "416-555-0144", address: "20 Bay St", window: "Thu, Oct 30 · 9 to 12", count: 14, status: "In progress", fee: 125, kind: "donate", intakeDone: true },
-    { id: "BDS-0009", company: "Bloor Design Studio", contact: "Ana Ruiz", email: "ana@bloordesign.example", phone: "416-555-0133", address: "700 Bloor St W", window: "Thu, Oct 30 · 1 to 4", count: 6, status: "In progress", fee: 125, kind: "donate", intakeDone: true },
-    { id: "QWL-0003", company: "Queen West Law", contact: "Tom Berg", email: "tom@queenwestlaw.example", phone: "416-555-0122", address: "910 Queen St W", window: "Tue, Oct 28 · 9 to 12", count: 8, status: "In progress", fee: 125, kind: "donate", intakeDone: true },
-    { id: "TRB-0002", company: "Trillium Brokerage", contact: "Mei Chen", email: "mei@trilliumbrokerage.example", phone: "416-555-0144", address: "20 Bay St", window: "Fri, Oct 24 · 1 to 4", count: 6, status: "In progress", fee: 125, kind: "donate", intakeDone: true },
-    { id: "HDG-0026", company: "Harbour Dental Group", contact: "Priti Shah", email: "priti@harbourdental.example", phone: "416-555-0111", address: "88 Adelaide St W", window: "Thu, Oct 30 · 1 to 4", count: 12, status: "In progress", fee: 125, kind: "donate", intakeDone: true },
+    { id: "HDG-0031", company: "Harbour Dental Group", contact: "Priti Shah", email: "priti@harbourdental.example", phone: "416-555-0111", address: "88 Adelaide St W", window: "Fri, Nov 6 · 1 to 4", count: 14, status: "Picked up", fee: 125, kind: "donate" },
+    { id: "QWL-0007", company: "Queen West Law", contact: "Tom Berg", email: "tom@queenwestlaw.example", phone: "416-555-0122", address: "910 Queen St W", window: "Fri, Nov 13 · 9 to 12", count: 11, status: "Booked", fee: 125, kind: "donate" },
+    { id: "BDS-0012", company: "Bloor Design Studio", contact: "Ana Ruiz", email: "ana@bloordesign.example", phone: "416-555-0133", address: "700 Bloor St W", window: "Wed, Nov 18 · 1 to 4", count: 10, status: "Booked", fee: 125, kind: "donate" },
+    { id: "TRB-0003", company: "Trillium Brokerage", contact: "Mei Chen", email: "mei@trilliumbrokerage.example", phone: "416-555-0144", address: "20 Bay St", window: "Sat, Nov 21 · 9 to 12", count: 22, status: "Booked", fee: 125, kind: "donate" },
+    { id: "MSA-0024", company: "Maple Street Accounting", contact: "Dana Okafor", email: "dana@maplestreetaccounting.example", phone: "416-555-0142", address: "142 King Street East, Suite 300", window: "Sat, Oct 24 · 9 to 12", count: 12, status: "In progress", fee: 125, kind: "donate", intakeDone: true },
+    { id: "MSA-0011", company: "Maple Street Accounting", contact: "Dana Okafor", email: "dana@maplestreetaccounting.example", phone: "416-555-0142", address: "142 King Street East, Suite 300", window: "Sat, Aug 22 · 9 to 12", count: 18, status: "Closed", fee: 125, kind: "donate", intakeDone: true },
+    { id: "QWL-0004", company: "Queen West Law", contact: "Tom Berg", email: "tom@queenwestlaw.example", phone: "416-555-0122", address: "910 Queen St W", window: "Wed, Oct 14 · 9 to 12", count: 10, status: "In progress", fee: 125, kind: "donate", intakeDone: true },
+    { id: "BDS-0004", company: "Bloor Design Studio", contact: "Ana Ruiz", email: "ana@bloordesign.example", phone: "416-555-0133", address: "700 Bloor St W", window: "Sat, Oct 10 · 1 to 4", count: 4, status: "In progress", fee: 125, kind: "donate", intakeDone: true },
+    { id: "TRB-0001", company: "Trillium Brokerage", contact: "Mei Chen", email: "mei@trilliumbrokerage.example", phone: "416-555-0144", address: "20 Bay St", window: "Fri, Oct 30 · 9 to 12", count: 14, status: "In progress", fee: 125, kind: "donate", intakeDone: true },
+    { id: "BDS-0009", company: "Bloor Design Studio", contact: "Ana Ruiz", email: "ana@bloordesign.example", phone: "416-555-0133", address: "700 Bloor St W", window: "Fri, Oct 30 · 1 to 4", count: 6, status: "In progress", fee: 125, kind: "donate", intakeDone: true },
+    { id: "QWL-0003", company: "Queen West Law", contact: "Tom Berg", email: "tom@queenwestlaw.example", phone: "416-555-0122", address: "910 Queen St W", window: "Wed, Oct 28 · 9 to 12", count: 8, status: "In progress", fee: 125, kind: "donate", intakeDone: true },
+    { id: "TRB-0002", company: "Trillium Brokerage", contact: "Mei Chen", email: "mei@trilliumbrokerage.example", phone: "416-555-0144", address: "20 Bay St", window: "Sat, Oct 24 · 1 to 4", count: 6, status: "In progress", fee: 125, kind: "donate", intakeDone: true },
+    { id: "HDG-0026", company: "Harbour Dental Group", contact: "Priti Shah", email: "priti@harbourdental.example", phone: "416-555-0111", address: "88 Adelaide St W", window: "Fri, Oct 30 · 1 to 4", count: 12, status: "In progress", fee: 125, kind: "donate", intakeDone: true },
   ];
 
   const D: Device[] = [];
@@ -130,8 +130,8 @@ export function makeSeed(): AppState {
     { id: "b04", name: "Batch 04", partnerId: "p1", deviceIds: ids("MSA-0024", 0, 8), status: "Refurbishing", shipDate: "Oct 27", dueDate: "Nov 10", notified: true, accepted: true, messages: [] },
     { id: "b05", name: "Batch 05", partnerId: "p1", deviceIds: ids("QWL-0003"), status: "Ready for pickup", shipDate: "Nov 7", dueDate: "Nov 21", notified: true, accepted: true, messages: [] },
     { id: "b06", name: "Batch 06", partnerId: "p2", deviceIds: ids("TRB-0002"), status: "Shipped", shipDate: "Nov 4", dueDate: "Nov 7", notified: true, accepted: true, messages: [] },
-    { id: "plan07", name: "Plan 07", partnerId: "p1", deviceIds: ids("TRB-0001"), status: "Planned", shipDate: "Mon, Nov 10", notified: true, accepted: false, messages: msg("We are adding 14 devices to your next shipment, planned for Nov 10. Open Incoming to see them.", "Nov 6") },
-    { id: "plan08", name: "Plan 08", partnerId: "p2", deviceIds: ids("BDS-0009"), status: "Planned", shipDate: "Mon, Nov 17", notified: false, accepted: false, messages: [] },
+    { id: "plan07", name: "Plan 07", partnerId: "p1", deviceIds: ids("TRB-0001"), status: "Planned", shipDate: "Tue, Nov 10", notified: true, accepted: false, messages: msg("We are adding 14 devices to your next shipment, planned for Nov 10. Open Incoming to see them.", "Nov 6") },
+    { id: "plan08", name: "Plan 08", partnerId: "p2", deviceIds: ids("BDS-0009"), status: "Planned", shipDate: "Tue, Nov 17", notified: false, accepted: false, messages: [] },
   ];
   // device status inside returned / done batches
   D.forEach((d) => { if (d.shipmentId === "b03") d.history.push({ at: "Oct 31 · 15:00", label: "Back from partner", detail: "Batch 03 returned" }); });
@@ -158,6 +158,7 @@ export function makeSeed(): AppState {
     ],
   };
 
+  shipments.forEach((sh) => { sh.deviceIds = D.filter((d) => d.shipmentId === sh.id).map((d) => d.id); });
   return {
     devices: D, lots, partners, shipments, people, settings,
     inquiries: [], orders: [], cart: [{ productId: "", qty: 1 }].slice(0, 0), checkerLog: [],

@@ -1,0 +1,24 @@
+.biz .chip-btn.on, .biz .opt.on, .biz .tile.on, .biz .win.on { animation: bizPick .32s cubic-bezier(.34, 1.56, .64, 1); }
+@keyframes bizPick { 0% { transform: scale(.94); } 100% { transform: scale(1); } }
+.biz-chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.biz-q { display: flex; flex-direction: column; gap: 10px; }
+.biz-q > .qlabel { font-size: 16px; font-weight: 700; }
+.biz-grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.biz-count { display: flex; justify-content: space-between; align-items: center; padding: 10px 16px; border: 1px solid var(--line); border-radius: 10px; background: #fff; font-weight: 600; }
+.biz-count.has { border-color: var(--brand); }
+.biz-crumbs { display: flex; gap: 8px; align-items: center; font-size: 14px; color: var(--muted); flex-wrap: wrap; }
+.biz-crumbs a { color: var(--brand); font-weight: 600; }
+.biz-crumbs a:hover { text-decoration: underline; }
+.win { text-align: left; background: #fff; border: 2px solid var(--line); border-radius: 12px; padding: 18px 20px; cursor: pointer; display: flex; flex-direction: column; gap: 4px; flex: 1; font: inherit; color: var(--fg); transition: all .18s var(--ease-out); animation: pop .45s var(--ease-out) both; }
+.win:nth-child(2) { animation-delay: .07s; } .win:nth-child(3) { animation-delay: .14s; }
+.win:hover { border-color: var(--brand); transform: translateY(-3px); }
+.win.on { border-color: var(--brand); background: #EEF1FD; }
+.win b { font-family: var(--f-display); font-size: 28px; text-transform: uppercase; line-height: 1; }
+.mini6 { display: flex; gap: 3px; width: 120px; }
+.mini6 i { flex: 1; height: 7px; border-radius: 3px; background: var(--surface2); }
+.mini6 i.on { background: var(--brand); animation: grow .5s var(--ease-out) both; transform-origin: left; }
+.mini6.done i.on { background: var(--ok); }
+.biz-form-row { display: flex; gap: 16px; }
+.table select.input, .table input.input { padding: 7px 9px; font-size: 14px; min-width: 110px; }
+.biz-card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 20px; }
+@media (max-width: 800px) { .biz-grid2 { grid-template-columns: 1fr; } .biz-form-row { flex-direction: column; } .page { padding: 24px 16px 48px; } .fun-head { padding: 0 16px; } .qcard { padding: 24px; } .biz-card-grid { grid-template-columns: 1fr; } }

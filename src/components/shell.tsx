@@ -83,7 +83,7 @@ export function DemoSidebar() {
       ))}
       <div className="demo-spacer" />
       <button className="demo-reset" onClick={reset}>Reset demo</button>
-      <div className="demo-note">Demo day is Thursday, Nov 6. Everything you change stays in this browser until you reset.</div>
+      <div className="demo-note">Demo day is Friday, Nov 6. Everything you change stays in this browser until you reset.</div>
     </aside>
   );
 }
